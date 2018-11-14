@@ -35,7 +35,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="collapse navbar-collapse" id="navbarCollapse" role="navigation">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#home">L'accueil</a>
@@ -80,7 +80,7 @@
     <section id="concept">
       <div class="container">
         <div class="section-header">
-          <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Le concept</p>
+          <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s" >Le concept</p>
           <h2 class="section-title wow fadeIn" data-wow-delay="0.2s">
           Comment instaurer une biodiversité stable à travers la végétalisation de la ville ?
           </h2>
@@ -158,22 +158,21 @@
           </div>
         </div>
         <div class="row mt">
-          <div class="col-lg-6 col-lg-push-6 col-md-12 col-sm-12">
+          <div class="col-lg-6 col-md-12 col-sm-12 order-lg-12">
            <div class="img-thumb wow fadeInLeft" data-wow-delay="1.2s">
              <img class="img-fluid" src="img/jeu/plateau.jpg" alt="">
            </div>
          </div>
-          <div class="col-lg-6 col-lg-pull-6 col-md-12 col-sm-12">
-            <div class="text-wrapper wow fadeInRight" data-wow-delay="0.9s">
-              <div>
-                <p class="btn btn-subtitle">La réalité augmentée ?</p>
-                <h3>Une nouvelle manière de jouer !</h3>
-                <p>Biotica intègre la réalité augmentée, pour vous faire vivre une expérience de jeu unique.
-                Utilisez votre smartphone pour visualiser en temp réel le résultat de vos actions sur la biodiversité en ville.</p>
-              </div>
-            </div>
-          </div>
-
+         <div class="col-lg-6 col-md-12 col-sm-12 order-lg-1">
+           <div class="text-wrapper wow fadeInRight" data-wow-delay="0.9s">
+             <div>
+               <p class="btn btn-subtitle">La réalité augmentée ?</p>
+               <h3>Une nouvelle manière de jouer !</h3>
+               <p>Biotica intègre la réalité augmentée, pour vous faire vivre une expérience de jeu unique.
+               Utilisez votre smartphone pour visualiser en temps réel le résultat de vos actions sur la biodiversité en ville.</p>
+             </div>
+           </div>
+         </div>
         </div>
         <div class="row mt">
         <div class="col-lg-6 col-md-12 col-sm-12">
@@ -410,7 +409,7 @@
                   <p>L’application est le maître du jeu, elle gère les règles, le comptage de points et propose plusieurs niveaux de difficulté.</p>
                 </div>
                 <a href="#" class="btn btn-common btn-effect"><i class="lni-android"></i> Depuis le PlayStore<br></a>
-                <a href="#" class="btn btn-apple"><i class="lni-apple"></i> Depuis l'AppStore<br></a>
+                <a href="#" class="btn btn-apple btn-effect"><i class="lni-apple"></i> Depuis l'AppStore<br></a>
               </div>
             </div>
           </div>
@@ -418,32 +417,6 @@
       </div>
     </section>
     <!-- download Section Start -->
-
-    <section id="subscribe">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-7 col-md-12 col-xs-12">
-            <div class="subscribe-form">
-              <div class="form-wrapper">
-                <div class="sub-title text-center">
-                  <h3>Subscribe For More Features</h3>
-                </div>
-                <form>
-                  <div class="row">
-                    <div class="col-12 form-line">
-                      <div class="form-group form-search">
-                        <input type="email" class="form-control" name="email" placeholder="Enter Your Email">
-                        <button type="submit" class="btn btn-common btn-search">Subscribe</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Map Section Start -->
     <section id="map-area">
@@ -473,29 +446,33 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                          <label for="name" class="hidden"> Votre nom </label>
+                          <input type="text" class="form-control" id="name" name="name" aria-labelledby="nom" required data-error="Please enter your name" placeholder="Votre nom">
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <input type="text" placeholder="Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                          <label for="email" class="hidden"> Votre email </label>
+                          <input type="text" aria-labelledby="email" id="email" class="form-control" name="name" required data-error="Please enter your email" placeholder="Votre email">
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                          <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required="" data-error="Please enter your subject">
+                          <label for="msg_subject" class="hidden"> Sujet </label>
+                          <input type="text" aria-labelledby="sujet du message" id="msg_subject" class="form-control" required="" data-error="Please enter your subject" placeholder="Sujet de votre message">
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                          <textarea class="form-control" id="message" placeholder="Message" rows="7" data-error="Write your message" required></textarea>
+                          <label for="message" class="hidden"> Votre message </label>
+                          <textarea class="form-control" id="message" aria-labelledby="message" rows="7" data-error="Write your message" required placeholder="Votre message"></textarea>
                           <div class="help-block with-errors"></div>
                         </div>
                         <div class="submit-button">
-                          <button class="btn btn-common btn-effect" id="submit" type="submit">Envoyer</button>
+                          <button class="btn btn-apple btn-effect" id="submit" type="submit">Envoyer</button>
                           <div id="msgSubmit" class="h3 hidden"></div>
                           <div class="clearfix"></div>
                         </div>
@@ -513,59 +490,61 @@
 
     <!-- Footer Section Start -->
     <footer>
-      <!-- Footer Area Start -->
-      <section class="footer-Content">
+      <section class="footer-content">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <img src="" alt="">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+              <!-- <img src="" alt=""> -->
               <h2>Biotica</h2>
               <div class="textwidget">
-                <p></p>
+
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">Nous soutenir</h3>
-                <ul class="menu">
-                  <li><a href="#">Sign In</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Jobs</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="widget">
                 <h3 class="block-title">Nos engagements</h3>
                 <ul class="menu">
-                  <li><a href="#">Comunity</a></li>
+                  <li><a href="#">Community</a></li>
                   <li><a href="#">Become a Partner</a></li>
                   <li><a href="#">Our Technology</a></li>
                   <li><a href="#">Documentation</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">Informations légales</h3>
-                <ul class="menu">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="subscribe-form">
+                <div class="form-wrapper">
+                  <h3 class="block-title">Chopez les dernières news de Biotica</h3>
+                  <form>
+                    <div class="row">
+                      <div class="col-12 form-line">
+                        <div class="form-group form-search">
+                          <label for="email" class="hidden"> Votre email </label>
+                          <input type="email" class="form-control" name="email" required aria-labelledby="email" maxlength="320" placeholder="Votre email">
+                          <button type="submit" class="btn btn-common btn-search">Subscribe</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="footer-social menu conditions">
                   <li><a href="#">Conditions générales d'utilisation</a></li>
                   <li><a href="#">Nous contacter</a></li>
                   <li><a href="#">Politique de confidentialité</a></li>
                   <li><a href="#">Politique de cookies</a></li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- Copyright Start  -->
-        <div class="copyright">
-          <div class="container">
-            <div class="row">
               <div class="col-md-12">
                 <div class="site-info float-left">
-                  <p> 2018 - Produit avec <i class="fas fa-heart"></i> par la team Biotica </a></p>
+                  <p> © 2018 - Produit avec <i class="fas fa-heart"></i> par la team Biotica </a></p>
                 </div>
                 <div class="float-right">
                   <ul class="footer-social">
@@ -579,12 +558,9 @@
             </div>
           </div>
         </div>
-      <!-- Copyright End -->
       </section>
-      <!-- Footer area End -->
-
     </footer>
-    <!-- Footer Section End -->
+    <!-- Footer Section End  -->
 
     <!-- Go To Top Link -->
     <a href="#" class="back-to-top">

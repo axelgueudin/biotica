@@ -66,6 +66,16 @@ ul li {
   list-style: none;
 }
 
+label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: darkgrey;
+}
+
+::placeholder{
+  text-align: left;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -86,6 +96,17 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .bg-default {
   background: #3c9cfd !important;
+}
+
+.hidden{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /* ==========================================================================
@@ -147,12 +168,12 @@ section {
 }
 
 .btn-common {
-  background-color:var(--maincolor);
+  background-color:var(--navcolor);
   position: relative;
   z-index: 1;
 }
 
-.btn-common:hover {
+.btn-common:hover, .btn-apple:hover {
   color: #fff;
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
 }
@@ -182,7 +203,7 @@ section {
 .btn-border {
   border-style: solid;
   border-width: 2px;
-  cursor: pointer;
+  /* cursor: pointer; */
   background-color: transparent;
   border-color: #3c9cfd;
   color: #3c9cfd;
@@ -193,7 +214,7 @@ section {
 }
 
 .btn-border-filled {
-  cursor: pointer;
+  /* cursor: pointer; */
   background-color: #fff;
   border: 2px solid #fff;
   color: #3c9cfd;
@@ -236,30 +257,15 @@ section {
 }
 
 .btn-apple {
-  border-width: 2px;
-  border-color: var(--maincolor);
-  border-style: solid;
-  background: var(--maincolor);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  background-color:var(--maincolor);
+  position: relative;
+  z-index: 1;
 }
 
 .btn-apple i {
-  background: var(--maincolor);
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.btn-apple:hover,
-.btn-apple:active,
-.btn-apple:focus {
-  background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
 }
 
 button:focus {
@@ -505,6 +511,8 @@ button:focus {
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   padding: 5px;
+  max-width: 1440px;
+  margin:auto;
 }
 
 .menu-bg .menu-button {
@@ -1656,7 +1664,7 @@ button:focus {
 }
 
 .left, .right {
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 30px;
   color: #3c9cfd;
 }
@@ -1788,7 +1796,7 @@ textarea {
   background: #ffffff;
   padding-bottom: 80px;
   position: relative;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #contact h2 {
@@ -1821,6 +1829,10 @@ textarea {
 
 #msgSubmit {
   margin-bottom: 0;
+}
+
+.submit-button{
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -1860,7 +1872,7 @@ textarea {
   display: block;
   width: 100%;
   text-align: left;
-  font-size: 20px;
+  font-size: 14px;
   box-shadow: none;
   margin-bottom: 0;
   color: #fff;
@@ -1883,11 +1895,11 @@ textarea {
   top: 6px;
   right: 22px;
   z-index: 2;
-  width: 156px;
+  width: 136px;
   font-weight: 600;
   background: #fff;
   color: var(--navcolor);
-  height: 52px;
+  height: 42px;
   text-align: center;
   position: absolute;
   padding: 0px;
@@ -1972,6 +1984,11 @@ textarea {
 /* ==========================================================================
    Footer Style
    ========================================================================== */
+footer{
+  max-width: 1440px;
+  margin: auto;
+}
+
 .block-title {
   font-size: 20px;
   font-weight: 500;
@@ -1980,13 +1997,13 @@ textarea {
   position: relative;
 }
 
-footer .footer-Content {
+footer .footer-content {
   background-color: var(--navcolor);
   padding: 60px 0 0px;
   color: #546E7A;
 }
 
-footer .footer-Content h2 {
+footer .footer-content h2 {
   font-family: 'Caveat Brush',cursive;
   font-size: 48px;
   text-transform: uppercase;
@@ -2060,6 +2077,7 @@ footer .menu li a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
   margin-top: 30px;
+  position: relative;
 }
 
 .copyright p {
@@ -2083,6 +2101,22 @@ footer .menu li a:hover {
 
 .copyright .nav-inline .nav-link:hover {
   color: #3c9cfd;
+}
+
+footer .conditions li{
+  padding-right: 40px;
+}
+
+footer .conditions li:after{
+  content: "|";
+  position: absolute;
+  color: white;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+footer .conditions li:last-child:after{
+  content: " ";
 }
 
 /* ==========================================================================
