@@ -164,7 +164,7 @@
     margin-bottom: 15px;
   }
   .hero-area-2 .contents h2 {
-    font-size: 24px;
+    font-size: 86px;
     line-height: 36px;
   }
   .hero-area-2 .contents {
@@ -406,7 +406,7 @@
     font-size: 20px;
   }
   .subscribe-form .form-wrapper .form-control {
-    padding: 20px 16px;
+    /* padding: 20px 16px; */
     font-size: 14px;
   }
   .subscribe-form .form-wrapper .btn-search {

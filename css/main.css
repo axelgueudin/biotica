@@ -489,7 +489,7 @@ button:focus {
 }
 
 .back-to-top i {
-  background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%);
+  background-color: var(--maincolor);
   -webkit-background-clip: text;
   font-size: 20px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -640,7 +640,7 @@ button:focus {
 .hero-area-2 .contents p {
   color: #fff;
   font-size: 42px;
-  line-height: 26px;
+  /* line-height: 26px; */
 }
 
 .hero-area-2 .contents .btn {
@@ -748,6 +748,7 @@ button:focus {
 
 #download .download-wrapper .download-text h4 {
   font-size: 36px;
+  /* color: var(--maincolor); */
 }
 
 #download .btn {
@@ -1070,7 +1071,7 @@ button:focus {
   border-radius: 50px;
   text-align: center;
   position: relative;
-  background-color: var(--maincolor);
+  background-color: var(--navcolor);
   z-index: 1;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
