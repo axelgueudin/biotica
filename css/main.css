@@ -567,8 +567,9 @@ button:focus {
   width: 100%;
 }
 
-.navbar-brand {
+.brand {
   color: #fff;
+  margin-left: 2rem;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:focus,
@@ -610,6 +611,7 @@ button:focus {
   overflow: hidden;
   height: 100vh;
   /* position: relative; */
+
 }
 
 .hero-area-2 .overlay {
@@ -618,7 +620,7 @@ button:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-image: url("../img/bg/bg.png");
+  background-image: url(../img/bg/bg.png);
   background-size: cover;
 }
 
