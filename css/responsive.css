@@ -1,4 +1,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
+  .brand {
+    margin-left: 1rem;
+  }
   .section {
     padding: 60px 0 45px;
   }
@@ -81,6 +84,9 @@
 
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
+ .brand {
+    margin-left: 0.5rem !important;
+  }
   .navbar-brand img {
     width: 80px;
   }
@@ -152,6 +158,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .fixed-top  {
+    background-color: var(--navcolor) !important;
+  }
   .section {
     padding: 60px 0 45px;
   }
@@ -290,6 +299,12 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .fixed-top  {
+    background-color: var(--navcolor) !important;
+  }
+  .nav-item-logo{
+    display: none;
+  }
   .section {
     padding: 60px 0 45px;
   }
