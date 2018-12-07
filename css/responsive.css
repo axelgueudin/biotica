@@ -161,6 +161,9 @@
   .fixed-top  {
     background-color: var(--navcolor) !important;
   }
+  .nav-item-logo{
+    display: none;
+  }
   .section {
     padding: 60px 0 45px;
   }
