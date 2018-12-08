@@ -140,11 +140,6 @@ section {
   margin-bottom: 20px;
   font-family: 'Manifont Grotesk', sans-serif;
   font-weight: 600;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  background-color: rgba(var(--maincolor));
   position: relative;
 }
 
@@ -1340,18 +1335,18 @@ button:focus {
   padding: 3px 0;
 }
 
-.testimonial-item .content-inner .author-info h2 {
+.testimonial-item .content-inner .author-info h3 {
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
   margin-bottom: 0;
 }
 
-.testimonial-item .content-inner .author-info h2 a {
+.testimonial-item .content-inner .author-info h3 a {
   color: #484848;
 }
 
-.testimonial-item .content-inner .author-info h2 a:hover {
+.testimonial-item .content-inner .author-info h3 a:hover {
   color: #3c9cfd;
 }
 
@@ -1420,7 +1415,7 @@ button:focus {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
-  margin: 15 7px 0px;
+  margin: 15px 7px 0px;
   padding: 15px 30px;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;

@@ -97,9 +97,10 @@
   .hero-area .contents {
     padding: 100px 0 20px;
   }
-  .hero-area-2 .contents h2 {
+  .hero-area-2 .contents h1 {
     line-height: 42px;
-    font-size: 26px;
+    font-size: 72px;
+    margin-bottom: 26px;
   }
   .hero-area-2 .contents {
     padding-bottom: 0px;
@@ -175,9 +176,9 @@
     line-height: 30px;
     margin-bottom: 15px;
   }
-  .hero-area-2 .contents h2 {
+  .hero-area-2 .contents h1 {
     font-size: 86px;
-    line-height: 36px;
+    /* line-height: 36px; */
   }
   .hero-area-2 .contents {
     padding-bottom: 0px;
@@ -303,7 +304,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .fixed-top  {
-    background-color: var(--navcolor) !important;
+    background-color: rgba(var(--navcolor)) !important;
   }
   .nav-item-logo{
     display: none;
