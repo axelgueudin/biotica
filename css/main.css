@@ -29,7 +29,7 @@ html{
 body {
   font-family: 'Avenir Regular', sans-serif;
   color: #47484a;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   background: #fff;
   /* scroll-snap-type: mandatory;
@@ -38,7 +38,7 @@ body {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #47484a;
   line-height: 26px;
   font-family: 'Avenir Regular', sans-serif;
@@ -73,7 +73,7 @@ ul li {
 
 label {
   font-family: 'Manifont Grotesk', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: darkgrey;
 }
 
@@ -137,7 +137,7 @@ section {
    Buttons
    ========================================================================== */
 .btn {
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px 30px;
   border-radius: 30px;
   font-family: 'Manifont Grotesk', sans-serif;
@@ -219,7 +219,7 @@ section {
 }
 
 .btn-lg {
-  padding: 14px 33px;
+  padding: 16px 33px;
   text-transform: uppercase;
   font-size: 16px;
 }
@@ -280,7 +280,7 @@ button:focus {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .clear {
@@ -1006,7 +1006,7 @@ button:focus {
 
 #features .tab-content .tab-pane {
   padding: 20px 15px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
 }
 
@@ -1102,7 +1102,7 @@ button:focus {
 }
 
 #concept .box-item .text p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
 }
 
@@ -1226,7 +1226,7 @@ button:focus {
 }
 
 .single-team .team-details p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0px;
 }
 
@@ -1407,7 +1407,7 @@ button:focus {
   color: #191c1e !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   margin: 15px 7px 0px;
   padding: 15px 30px;
@@ -1546,7 +1546,7 @@ button:focus {
 
 #carousel-area .carousel-item .carousel-caption p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
@@ -1610,7 +1610,7 @@ button:focus {
 
 #carousel-area .carousel-agency .carousel-caption p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
@@ -1734,7 +1734,7 @@ button:focus {
 
 #blog .author .name a {
   color: #a0a6ad;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -1743,7 +1743,7 @@ button:focus {
 }
 
 #blog .author .date {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* ==========================================================================
@@ -1753,9 +1753,9 @@ button:focus {
   width: 100%;
   margin-bottom: 30px;
   padding: 15px 30px;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 30px;
-  text-align: center;
+  text-align: left;
   border: 1px solid #ececec;
   box-shadow: 6px 0px 43px rgba(131, 131, 131, 0.13);
   -webkit-transition: all 0.3s;
@@ -1794,7 +1794,7 @@ textarea {
 }
 
 .contact-info p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -1866,7 +1866,7 @@ textarea {
 }
 
 .subscribe-form .sub-title p {
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -2022,7 +2022,7 @@ footer .footer-content h2 {
 }
 
 .textwidget p {
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
 }
 
@@ -2036,7 +2036,7 @@ footer .menu li {
 
 footer .menu li a {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 footer .menu li a:hover {
@@ -2054,7 +2054,7 @@ footer .menu li a:hover {
 
 .footer-social li a {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   display: inline-block;
   -webkit-transition: all .4s ease-in-out;
@@ -2118,7 +2118,7 @@ footer .conditions li:after{
   position: absolute;
   color: white;
   padding: 0 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 footer .conditions li:last-child:after{
@@ -2226,5 +2226,5 @@ footer .conditions li:last-child:after{
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }

@@ -160,7 +160,7 @@
 
 @media only screen and (max-width: 767px) {
   .fixed-top  {
-    background-color: var(--navcolor) !important;
+    background-color: rgba(var(--navcolor)) !important;
   }
   .nav-item-logo{
     display: none;
