@@ -14,7 +14,7 @@
    GENERAL
    ========================================================================== */
 :root {
-  --maincolor: 0,0,0;
+  --maincolor: 35,73,152;
   --navcolor: 72,215,153;
 }
 
@@ -625,7 +625,7 @@ button:focus {
   text-align: center;
 }
 
-.hero-area-2 .contents h2 {
+.hero-area-2 .contents h1 {
   color: #fff;
   font-size: 142px;
   text-transform: uppercase;
